@@ -29,7 +29,6 @@ body {
     margin-top: 3rem;
 }
 
-
 #add-book-btn {
     width: 11rem;
     padding: 0.7rem;
@@ -43,7 +42,6 @@ body {
 #add-book-btn:hover {
     filter: brightness(90%);
 }
-
 
 .form-container {
     display: flex;
@@ -64,19 +62,18 @@ body {
     display: block;
 }
 
-
 #popup-form {
-	display: flex;
+    display: flex;
     flex-direction: column;
     width: 19rem;
-	height: 28rem;
-	margin-top: -5rem;
-	padding: 0.5rem;
+    height: 28rem;
+    margin-top: -5rem;
+    padding: 0.5rem;
     position: fixed;
     z-index: 1;
-	background-color: #f0eef1;
-	border-radius: 10px;
-	font-size: 1.3rem;
+    background-color: #f0eef1;
+    border-radius: 10px;
+    font-size: 1.3rem;
     transform: translate(0, -100%) scale(0);
     transition: transform 0.5s ease-in-out !important;
 }
@@ -100,52 +97,49 @@ body {
     border: none;
 }
 
-
 #popup-form > input {
-	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-	background-color: #fffbfb;
-	border: none;
-	padding: 1rem;
-	border-radius: 5px;
-	font-size: 1.2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #fffbfb;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
 }
 
 #popup-form > input::placeholder {
-	font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
-
 #popup-form > * {
-	margin: 0.8rem;
+    margin: 0.8rem;
 }
 
 .form-title {
-	font-weight: 700;
-	font-size: 1.5rem;
-	text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .checkbox {
-	text-align: center;
-	cursor: pointer;
-}
-
-#submit {
-	margin-top: -0.2rem;
-	font-weight: 700;
-	font-size: 1.3rem;
-	padding: 1.3rem;
-	border: none;
-	background-color: #8fe58c;
-	border-radius: 10px;
+    text-align: center;
     cursor: pointer;
 }
 
+#submit {
+    margin-top: -0.2rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 1.3rem;
+    border: none;
+    background-color: #8fe58c;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
 .book-container {
     padding: 3rem;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 50px;
     row-gap: 50px;
 }
@@ -180,93 +174,76 @@ body {
     background-color: #f89898;
 }
 
-
-
 @media only screen and (max-width: 735px) {
-   .title {
-    margin-left: 1rem;
-   }
+    .title {
+        margin-left: 1rem;
+    }
 
-   #popup-form {
-    width: 20rem;
-	height: 25rem;
-	margin-top: -1rem;
-	padding: 0.5rem;
-    position: fixed;
-    z-index: 1;
-	background-color: #f0eef1;
-	border-radius: 10px;
-    font-size: 1rem;
-}
+    #popup-form {
+        width: 20rem;
+        height: 25rem;
+        margin-top: -1rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
 
-.form-title {
-    font-size: 1.2rem;
-}
+    .form-title {
+        font-size: 1.5rem;
+    }
 
-#popup-form > input {
-	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-	background-color: #fffbfb;
-	border: none;
-	padding: 0.3rem;
-	border-radius: 5px;
-	font-size: 1rem;
-}
+    .form-close {
+        width: 3rem;
+        font-size: 1.5rem;
+    }
 
-#popup-form > input::placeholder {
-	font-size: 1rem;
-    /* padding: 10px; */
-}
+    #popup-form > input {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
 
+    #popup-form > input::placeholder {
+        font-size: 1rem;
+    }
 
-#popup-form > * {
-	margin: 0.8rem;
-}
+    #popup-form > * {
+        margin: 0.8rem;
+    }
 
+    #submit {
+        margin-top: -0.2rem;
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
 
-#submit {
-	margin-top: -0.2rem;
-	font-size: 1rem;
-	padding: 0.5rem;
-}
+    .book-container {
+        /* border: 1px solid green; */
+        margin-top: 1rem;
+        padding: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
 
-.book-container {
-    /* border: 1px solid green; */
-    margin-top: 1rem;
-    padding: 1.5rem;
-    display: grid;
-    /* grid-template-columns: 1fr; */
-    grid-template-columns: 1fr;
-    justify-items: center;
-    /* row-gap: 50px; */
-}
+    .book {
+        padding: 1rem;
+        font-size: 1.3rem;
+    }
 
-.book {
-    padding: 1rem;
-    font-size: 1.3rem;
-    background-color: #fffbfb;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
+    .book > * {
+        margin-bottom: 1rem;
+    }
 
-.book > * {
-    /* margin-top: 1rem; */
-    margin-bottom: 1rem;
-}
+    .book-btn {
+        width: 300px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
 
-.book-btn {
-    width: 300px;
-    height: 50px;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.3rem;
-}
+    .book-btn:hover {
+        filter: brightness(90%);
+    }
 
-.book-btn:hover {
-    filter: brightness(90%);
-}
-
-.read {
-    background-color: #f89898;
-}
+    .read {
+        background-color: #f89898;
+    }
 }

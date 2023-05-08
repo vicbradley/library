@@ -7,10 +7,7 @@ const booksContainer = document.querySelector(".book-container");
 
 
 addBookButton.addEventListener("click", () => {
-    // alert("hello world")
-    // popupContainer.classList.toggle("hide");
     popupForm.classList.toggle("active");
-    // body.classList.add("overlay")
     overlay.classList.toggle("active");
 });
 
@@ -70,7 +67,6 @@ popupForm.addEventListener("submit", function (event) {
     const read = document.getElementById("read").checked;
 
 
-    // Do something with the input values (e.g. submit them to a server)
     addBook(title,author,pages,read);
 
     popupForm.reset();
@@ -79,20 +75,6 @@ popupForm.addEventListener("submit", function (event) {
     overlay.classList.toggle("active");
 });
 
-// const title = document.querySelector(".title");
-// title.addEventListener("click",() => {
-//     const removeButtons = document.querySelectorAll(".remove");
-//     console.log(removeButtons)
-// })
-
-// const removeBtns = document.querySelectorAll(".remove");
-
-// removeBtns.forEach((btn) => {
-//   btn.addEventListener("click", (event) => {
-//     const bookDiv = event.target.closest(".book");
-//     bookDiv.remove();
-//   });
-// });
 
 booksContainer.addEventListener("click", function(event) {
     // Check if the clicked element is a remove button
